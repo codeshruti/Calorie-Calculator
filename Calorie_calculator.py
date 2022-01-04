@@ -27,10 +27,10 @@ else:
 	proteins_ = df1['Proteins(g)'][index_]
 	image_ = df1['Image'][index_]
 	kd = df1['Korean Description'][index_]
-	st.write("**Calorie count** ",cal_*serving_)
-	st.write("**Carb value** ",carb_*serving_)
-	st.write("**Fat Value** ",fat_*serving_)
-	st.write("**Protein intake** ",proteins_*serving_)
+	st.write("**Calorie count** ",round(cal_*serving_,2))
+	st.write("**Carbohydrate value** ",round(carb_*serving_,2))
+	st.write("**Fat value** ",round(fat_*serving_,2))
+	st.write("**Protein intake** ",round(proteins_*serving_,2))
 	st.write("**Recipe**",recipe_)
 	st.write("**Description in Korean**",kd)	
 	st.image(image_,width=500)
