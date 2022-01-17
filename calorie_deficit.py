@@ -37,5 +37,5 @@ body {
 		st.write("**Resting Metabolic Rate: **",round(rmr_female,2))
 	mcal = bmr * act
 	mcalw = mcal * 7
-	st.write("**Calorie Deficit for the week: **",round(mcal,2))
+	st.write("**Calorie Deficit for the day: **",round(mcal,2))
 app()
