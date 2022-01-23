@@ -90,7 +90,6 @@ body {
 		func(val,sweight,height,gender,age,lr,cw,calfood,calburn)
 	else:
 		st.write("** Please select a Start date before current date**")
-app()
 
 
 
