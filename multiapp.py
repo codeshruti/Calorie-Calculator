@@ -2,6 +2,7 @@ import Calorie_calculator
 import weightloss_tracker
 import calorie_deficit
 import streamlit as st
+st.set_page_config(page_title='Calorie Calculator')
 PAGES = {
     "Calorie Calculator": Calorie_calculator,
     "Calorie Deficit Calculator": calorie_deficit,
