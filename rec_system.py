@@ -75,7 +75,7 @@ def get_recommendations(N, scores):
         recommendation.at[count, 'Score'] = "{:.3f}".format(float(scores[i]))
         count += 1
     return recommendation
-def main():
+def app():
 	st.markdown("*Recipe Recommendation System*")
 	recipe_box = st.selectbox(
             "Display the top 5 recommendations or pick a particular recipe",
@@ -91,6 +91,4 @@ def main():
 		rec = get_recommendations(N,scores)
 		st.write("These are some recommendation(s) for you")
 		st.write(rec.head(N))
-if __name__ == "__main__":
-    main()
 
